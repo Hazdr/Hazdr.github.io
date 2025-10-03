@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Little Wardrobe</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#f04299",
+            "background-light": "#f8f6f7",
+            "background-dark": "#221019",
+          },
+          fontFamily: {
+            display: ["Plus Jakarta Sans", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "1rem",
+            lg: "2rem",
+            xl: "3rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="border-b border-primary/20 dark:border-primary/30 px-4 sm:px-6 lg:px-10 py-3">
+<div class="mx-auto flex max-w-7xl items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white">Little Wardrobe</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8 text-sm font-medium">
+<a class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">New Arrivals</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Girls</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Boys</a>
+<a class="text-gray-700 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Sale</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary/10 text-gray-700 dark:bg-primary/20 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary/10 text-gray-700 dark:bg-primary/20 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-primary/10 text-gray-700 dark:bg-primary/20 dark:text-gray-300 hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path>
+</svg>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<section class="py-12 sm:py-20 lg:py-24">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+<div class="order-2 lg:order-1 text-center lg:text-left">
+<h1 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl">
+                  Fashion for Every Child
+                </h1>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                  Discover our collection of comfortable, high-quality, and stylish clothing for boys and girls.
+                </p>
+<div class="mt-8 flex flex-wrap justify-center gap-4 lg:justify-start">
+<a class="inline-block rounded-full bg-pink-300 px-8 py-3 text-base font-bold text-pink-800 shadow-lg transition-transform hover:scale-105 dark:bg-pink-800/50 dark:text-white" href="#">Shop Girls</a>
+<a class="inline-block rounded-full bg-blue-300 px-8 py-3 text-base font-bold text-blue-800 shadow-lg transition-transform hover:scale-105 dark:bg-blue-800/50 dark:text-white" href="#">Shop Boys</a>
+</div>
+</div>
+<div class="order-1 lg:order-2">
+<div class="relative w-full rounded-lg aspect-square bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAh_wC_r3tqWdPq55AlyoO_WLreavC01pOrmvRuokXDaXtQDYrJS6pz1edD6yZwfKu2HnPW8Z9Z56fyZRYP-4pQoQNturTtfKKwpzLN9VnIrX3bIy_OjZ5x5UEgzG2_wKynZVibK0VPsYAQw2zfApqDZXHhb4c-ZmNteVvM8ozPcJOoS9M_LBeWTpSAK4eS5ljNGBP03u8wESisqE2BzQeh5FVBzQ62yP_W73j6ciEAuHCRnP1G2Qestokm3jV9TK7gMawLNS-ocyej");'></div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="bg-[#FBCFE8] dark:bg-pink-900/50 p-8 sm:p-12 lg:p-16">
+<div class="mx-auto max-w-2xl">
+<div class="text-center mb-8">
+<h2 class="text-3xl font-extrabold tracking-tight text-gray-800 dark:text-white sm:text-4xl">For Girls</h2>
+<p class="mt-2 text-lg text-gray-700/90 dark:text-white/90">Sweet styles for your little princess.</p>
+</div>
+<div class="bg-white/30 dark:bg-black/20 rounded-lg p-6 mb-8 flex flex-col md:flex-row items-center gap-6">
+<div class="md:w-1/2">
+<img alt="A young girl wearing a floral print dress." class="w-full h-full object-cover object-center rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlyNHE3e2kqDvSlnNXApuA9O5BeVP6wip-U5CjuVB_VxNAP5oHtmzNgfLnNXEzgcS-25AGznccQKwu3OR8_M_7Rs_e3pEBh6PpsRqC0GccGSWea8KWZqrFPZ6BBAG6QgAVMULrjbq8EMblNH2rxeWuRzEfeSWwXF_vpyHv9BAS_icDXhAcpSmSfKoP92hBX8LJIV7CxkgM0C-OZLF0NyPsMf3cUTpIH7KVP9GdY3Jc8jg7Vye0P_t4MDiREZ8M1N4yK2na3CiHS69B"/>
+</div>
+<div class="md:w-1/2 text-center md:text-left">
+<h3 class="text-xl font-bold text-gray-800 dark:text-white">Product Highlight</h3>
+<h4 class="text-2xl font-bold text-gray-800 dark:text-white mt-1">Floral Sundress</h4>
+<p class="mt-2 text-lg font-medium text-gray-800 dark:text-white">$25.00</p>
+<p class="mt-2 text-gray-700/80 dark:text-white/80">Our best-selling sundress, perfect for sunny days and special occasions. Made with 100% soft cotton.</p>
+<a class="mt-4 inline-block rounded-full bg-white px-6 py-2 text-base font-bold text-primary shadow-lg transition-transform hover:scale-105" href="#">Shop Now</a>
+</div>
+</div>
+<div class="relative">
+<div class="grid grid-cols-4 gap-6 overflow-x-auto scrollbar-hide">
+<div class="group relative flex-shrink-0">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
+<img alt="A pink t-shirt with a unicorn graphic." class="h-full w-full object-cover object-center group-hover:opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY51QtEVGivAWh8XcwsrrWADPOhKgv_4dVZVGrKkX4F_v2nhLxxhloiTW0SzzsqzTpWvFu69nnuQd-rDTlYneQ9Dr_dvlH6rDPbEbMprq66vj-p1tsF2TDEMaoqxFq77YutyvUK7Lyg0tO5L2W6o19twbNCggPDBqfiXg9Y6PocZ6OoM9HaOv3dxDpRX1tLYR2CZSvYLO3sE7gP3DemK2zJApFlsS4Cu49ZMK-7RSNHODoi1kCiNudO10W_DBaaL_Hy5kv1r9blQwo"/>
+</div>
+<h3 class="mt-4 text-sm text-gray-800 dark:text-gray-200">Unicorn Graphic Tee</h3>
+<p class="mt-1 text-lg font-medium text-gray-800 dark:text-white">$15.00</p>
+</div>
+<div class="group relative flex-shrink-0">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
+<img alt="A pair of denim shorts for girls." class="h-full w-full object-cover object-center group-hover:opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACY4_79Qi7tDDYbE4vNIrEZxeOlKiWy_4AIIP_l2So0IZdSjKyE1iavz28nrt8jjWe__-LeLl_e62Sjy1z-x2HMWXg8X9f8uzUAYM7aWhOga1BOUtWlfFRU_hk8WcD3nhhL1UkOGGJp4votDRv7HRJ1qa4311Lm5JcUce7ob2PU_eA55ZZSfWYReinpu-KxbneuvoCBl-PxA8Y56w_q4XodQk07_0oLXNMuDlMo2hQ5hfcENooBnVobW6CLcnlSzdTaMRj36j6Rl2Q"/>
+</div>
+<h3 class="mt-4 text-sm text-gray-800 dark:text-gray-200">Denim Shorts</h3>
+<p class="mt-1 text-lg font-medium text-gray-800 dark:text-white">$20.00</p>
+</div>
+<div class="group relative flex-shrink-0">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
+<img alt="A pair of glittery pink sneakers." class="h-full w-full object-cover object-center group-hover:opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWK1D4HaraHIqLSfVRmrYyI7UrbplTGMl0NCeQAjMEfBTrMvOtjK1u9MdOpWVyFm0EB3IQnM8PiSF1j4XlsxGbXQePYw7cvumY3e8REGhCvXFv91ZY-KXS9pFK_0PS8WEkGW4kFKZdUOY68BUC2nPyEwl2ejqSseJc1VrYhst6nh7KjAqU2EJo9Jk-6ayFJPfHxGPNcP05WoVmfU96a3L7OhEyvhcocMsquV8aUWuNEJwgIuebn4qVHEAQ9VN6zz2sXVUf13POVDs6"/>
+</div>
+<h3 class="mt-4 text-sm text-gray-800 dark:text-gray-200">Glitter Sneakers</h3>
+<p class="mt-1 text-lg font-medium text-gray-800 dark:text-white">$30.00</p>
+</div>
+<div class="group relative flex-shrink-0">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
+<img alt="A young girl wearing a floral print dress." class="h-full w-full object-cover object-center group-hover:opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlyNHE3e2kqDvSlnNXApuA9O5BeVP6wip-U5CjuVB_VxNAP5oHtmzNgfLnNXEzgcS-25AGznccQKwu3OR8_M_7Rs_e3pEBh6PpsRqC0GccGSWea8KWZqrFPZ6BBAG6QgAVMULrjbq8EMblNH2rxeWuRzEfeSWwXF_vpyHv9BAS_icDXhAcpSmSfKoP92hBX8LJIV7CxkgM0C-OZLF0NyPsMf3cUTpIH7KVP9GdY3Jc8jg7Vye0P_t4MDiREZ8M1N4yK2na3CiHS69B"/>
+</div>
+<h3 class="mt-4 text-sm text-gray-800 dark:text-gray-200">Floral Sundress</h3>
+<p class="mt-1 text-lg font-medium text-gray-800 dark:text-white">$25.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[#BFDBFE] dark:bg-blue-900/50 p-8 sm:p-12 lg:p-16">
+<div class="mx-auto max-w-2xl">
+<div class="text-center mb-8">
+<h2 class="text-3xl font-extrabold tracking-tight text-gray-800 dark:text-white sm:text-4xl">For Boys</h2>
+<p class="mt-2 text-lg text-gray-700/90 dark:text-white/90">Cool and comfy outfits for his adventures.</p>
+</div>
+<div class="bg-white/30 dark:bg-black/20 rounded-lg p-6 mb-8 flex flex-col md:flex-row items-center gap-6">
+<div class="md:w-1/2">
+<img alt="A blue hoodie with a dinosaur print." class="w-full h-full object-cover object-center rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDprX7ogH2xuqt9TF1U9AtvTuznCEOt3KlpByg_0eVut7KUrwqoCfINZQkfE3u-0HaYebWtxPvh2b5VTMsxTrX8qRKD7xfwMYaIZUQTDiaAiH1Rn5YxXW4cNyr75h0lKa5ijfvHaNhHSvmYXi6yJveXpAK0vbxXNbzEjfkT1VUf3k6eeV2bvqqPqu2lZoBGEb9rql_apl9SBWqZwd_LKcO2-nMgRsTGtnvsrPfzWlWHz6Kvq3gASDxAiMnpZdJ8ykWvULt1Ay93BBpl"/>
+</div>
+<div class="md:w-1/2 text-center md:text-left">
+<h3 class="text-xl font-bold text-gray-800 dark:text-white">Product Highlight</h3>
+<h4 class="text-2xl font-bold text-gray-800 dark:text-white mt-1">Dino Hoodie</h4>
+<p class="mt-2 text-lg font-medium text-gray-800 dark:text-white">$35.00</p>
+<p class="mt-2 text-gray-700/80 dark:text-white/80">A roaringly fun hoodie that's perfect for everyday play. Soft, warm, and ready for adventure.</p>
+<a class="mt-4 inline-block rounded-full bg-white px-6 py-2 text-base font-bold text-blue-500 shadow-lg transition-transform hover:scale-105" href="#">Shop Now</a>
+</div>
+</div>
+<div class="relative">
+<div class="grid grid-cols-4 gap-6 overflow-x-auto scrollbar-hide">
+<div class="group relative flex-shrink-0">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
+<img alt="A boy wearing a striped polo shirt." class="h-full w-full object-cover object-center group-hover:opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlyNHE3e2kqDvSlnNXApuA9O5BeVP6wip-U5CjuVB_VxNAP5oHtmzNgfLnNXEzgcS-25AGznccQKwu3OR8_M_7Rs_e3pEBh6PpsRqC0GccGSWea8KWZqrFPZ6BBAG6QgAVMULrjbq8EMblNH2rxeWuRzEfeSWwXF_vpyHv9BAS_icDXhAcpSmSfKoP92hBX8LJIV7CxkgM0C-OZLF0NyPsMf3cUTpIH7KVP9GdY3Jc8jg7Vye0P_t4MDiREZ8M1N4yK2na3CiHS69B"/>
+</div>
+<h3 class="mt-4 text-sm text-gray-800 dark:text-gray-200">Striped Polo Shirt</h3>
+<p class="mt-1 text-lg font-medium text-gray-800 dark:text-white">$18.00</p>
+</div>
+<div class="group relative flex-shrink-0">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
+<img alt="A pair of khaki cargo shorts for boys." class="h-full w-full object-cover object-center group-hover:opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB73exMY8e1fNMmubn9ERbRRRjXz-Ne53UN_1o0tGc0E3hVnfrIMGk4apXBoBuZYH9jerLkDNi6PECAFry18TDZsh-c4-siS_RKPsWYklDPrAXA1cf5QuGyxM-u9dlaMKFCd15lTuhIhkuJumaB1B78pDRJysw86U4HVg62Y30w26mKBg5U_C0_n3qP1XTo6rQHdG8FcyPf5CO3TNPP3BgXjQPFJXR1BJQT7bz3elhkVBPq1tHV4WUUwU5HLUDrecnCzdOR_jxGnITW"/>
+</div>
+<h3 class="mt-4 text-sm text-gray-800 dark:text-gray-200">Cargo Shorts</h3>
+<p class="mt-1 text-lg font-medium text-gray-800 dark:text-white">$22.00</p>
+</div>
+<div class="group relative flex-shrink-0">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
+<img alt="A pair of blue and orange sneakers for boys." class="h-full w-full object-cover object-center group-hover:opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0mX9nPTrCWu3pwNNFE1D-8MCuAoSbdqeAp3olsS7E6L-I4Wp69QzNI-ZICl5bflMKxDnaG9lUxP75WiZ3_-q-sjJpVWDfejiizyQ7ffqDgKQx7SVLeae4y_kv5haAVzR_BK7vgVOTB78rjT8eDLG_dXR8mGCMod8RqZaKFgStNjmqN231_zSxWqP5xrKtS52iccGed47RdMfINbB0xydJjF8esLLIOEF1Z-FnJNTRhpslu8lWgNu6E_xUjAEQMW8qyXWc25MSq-TZ"/>
+</div>
+<h3 class="mt-4 text-sm text-gray-800 dark:text-gray-200">Sporty Sneakers</h3>
+<p class="mt-1 text-lg font-medium text-gray-800 dark:text-white">$32.00</p>
+</div>
+<div class="group relative flex-shrink-0">
+<div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-lg bg-gray-200">
+<img alt="A blue hoodie with a dinosaur print." class="h-full w-full object-cover object-center group-hover:opacity-75" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDprX7ogH2xuqt9TF1U9AtvTuznCEOt3KlpByg_0eVut7KUrwqoCfINZQkfE3u-0HaYebWtxPvh2b5VTMsxTrX8qRKD7xfwMYaIZUQTDiaAiH1Rn5YxXW4cNyr75h0lKa5ijfvHaNhHSvmYXi6yJveXpAK0vbxXNbzEjfkT1VUf3k6eeV2bvqqPqu2lZoBGEb9rql_apl9SBWqZwd_LKcO2-nMgRsTGtnvsrPfzWlWHz6Kvq3gASDxAiMnpZdJ8ykWvULt1Ay93BBpl"/>
+</div>
+<h3 class="mt-4 text-sm text-gray-800 dark:text-gray-200">Dino Hoodie</h3>
+<p class="mt-1 text-lg font-medium text-gray-800 dark:text-white">$35.00</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 sm:py-20 lg:py-24">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+                Why Choose Little Wardrobe?
+              </h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                We're committed to providing the best for your little ones.
+              </p>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+<div class="rounded-lg bg-background-light dark:bg-background-dark p-6 shadow-md transition-transform hover:-translate-y-2">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</div>
+<h3 class="mt-5 text-lg font-bold text-gray-900 dark:text-white">Quality Fabrics</h3>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                  Our clothes are made from soft, durable materials that are gentle on your child's skin.
+                </p>
+</div>
+<div class="rounded-lg bg-background-light dark:bg-background-dark p-6 shadow-md transition-transform hover:-translate-y-2">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152ZM240,56H16a8,8,0,0,0-8,8V192a8,8,0,0,0,8,8H240a8,8,0,0,0,8-8V64A8,8,0,0,0,240,56ZM193.65,184H62.35A56.78,56.78,0,0,0,24,145.65v-35.3A56.78,56.78,0,0,0,62.35,72h131.3A56.78,56.78,0,0,0,232,110.35v35.3A56.78,56.78,0,0,0,193.65,184ZM232,93.37A40.81,40.81,0,0,1,210.63,72H232ZM45.37,72A40.81,40.81,0,0,1,24,93.37V72ZM24,162.63A40.81,40.81,0,0,1,45.37,184H24ZM210.63,184A40.81,40.81,0,0,1,232,162.63V184Z"></path>
+</svg>
+</div>
+<h3 class="mt-5 text-lg font-bold text-gray-900 dark:text-white">Affordable Prices</h3>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                  We offer competitive pricing without compromising on quality.
+                </p>
+</div>
+<div class="rounded-lg bg-background-light dark:bg-background-dark p-6 shadow-md transition-transform hover:-translate-y-2">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,40H48A16,16,0,0,0,32,56v58.78c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56H208ZM82.34,141.66a8,8,0,0,1,11.32-11.32L112,148.68l50.34-50.34a8,8,0,0,1,11.32,11.32l-56,56a8,8,0,0,1-11.32,0Z"></path>
+</svg>
+</div>
+<h3 class="mt-5 text-lg font-bold text-gray-900 dark:text-white">Safe Payments</h3>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                  Shop with confidence knowing your transactions are secure.
+                </p>
+</div>
+<div class="rounded-lg bg-background-light dark:bg-background-dark p-6 shadow-md transition-transform hover:-translate-y-2">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M239.2,97.29a16,16,0,0,0-13.81-11L166,81.17,142.72,25.81h0a15.95,15.95,0,0,0-29.44,0L90.07,81.17,30.61,86.32a16,16,0,0,0-9.11,28.06L66.61,153.8,53.09,212.34a16,16,0,0,0,23.84,17.34l51-31,51.11,31a16,16,0,0,0,23.84-17.34l-13.51-58.6,45.1-39.36A16,16,0,0,0,239.2,97.29Zm-15.22,5-45.1,39.36a16,16,0,0,0-5.08,15.71L187.35,216v0l-51.07-31a15.9,15.9,0,0,0-16.54,0l-51,31h0L82.2,157.4a16,16,0,0,0-5.08-15.71L32,102.35a.37.37,0,0,1,0-.09l59.44-5.14a16,16,0,0,0,13.35-9.75L128,32.08l23.2,55.29a16,16,0,0,0,13.35,9.75L224,102.26S224,102.32,224,102.33Z"></path>
+</svg>
+</div>
+<h3 class="mt-5 text-lg font-bold text-gray-900 dark:text-white">Happy Customers</h3>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                  Join our community of satisfied parents and children who love our products.
+                </p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30">
+<div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-8 text-center md:text-left">
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">About Us</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">Contact</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">FAQ</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">Privacy Policy</a>
+<a class="text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">Terms of Service</a>
+</div>
+<div class="mt-8 flex justify-center gap-6">
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+</svg>
+</a>
+<a class="text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-primary" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+</svg>
+</a>
+</div>
+<p class="mt-8 text-center text-sm text-gray-500 dark:text-gray-400">
+            © 2024 Little Wardrobe. All rights reserved.
+          </p>
+</div>
+</footer>
+</div>
+</div>
+<style>
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+</style>
+
+</body></html>
